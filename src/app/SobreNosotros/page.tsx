@@ -1,7 +1,8 @@
 import CardRazones from '@/components/CardsRazones/CardRazones';
 import { RazonesProps } from '@/interfaces/types';
+import Image from 'next/image';
 
-export default function page() {
+export default function Page() {
   const razones: RazonesProps[] = [
     {
       indice: 1,
@@ -64,14 +65,14 @@ export default function page() {
       {/* Sección de Presentación */}
       <section className="relative bg-white">
         <div className="flex flex-col w-full justify-center items-end bg-moradoTop">
-          {/*
-          <Image 
-            src="/images/floral-bouquet.jpg" // Asegúrate de tener esta imagen en tu carpeta /public/images
+          <Image
+            src="/img/bouquet2.svg"
             alt="Ramo floral"
+            className="w-full object-cover h-[400px] md:h-[600px]"
             width={1200}
             height={600}
-            className="rounded-lg shadow-lg"
-          />*/}
+            priority
+          />
 
           <div className=" flex flex-col items-end justify-center w-2/5 pr-10 pb-20">
             <h2 className="text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
