@@ -23,26 +23,26 @@ export default function NavBar() {
       </div>
       <div className="flex gap-x-10">
         <button
-          className={`text-2xl text-purple-800 hover:font-semibold select-none ${pathname == '/' && 'font-semibold'}`}
+          className={`text-sm md:text-2xl text-purple-800 hover:font-semibold select-none ${pathname == '/' && 'font-semibold'}`}
           onClick={() => goTo('/')}
         >
           Inicio
         </button>
         <button
-          className={`text-2xl text-purple-800 hover:font-semibold select-none ${pathname.includes('SobreNosotros') && 'font-semibold'}`}
+          className={`text-sm md:text-2xl text-purple-800 hover:font-semibold select-none ${pathname.includes('SobreNosotros') && 'font-semibold'}`}
           onClick={() => goTo('/SobreNosotros')}
         >
           Acerca de Nosotros
         </button>
         <button
-          className={`text-2xl text-purple-800 hover:font-semibold select-none ${pathname.includes('Servicios') && 'font-semibold'}`}
+          className={`text-sm md:text-2xl text-purple-800 hover:font-semibold select-none ${pathname.includes('Servicios') && 'font-semibold'}`}
           onClick={() => goTo('/Servicios')}
         >
           Servicios
         </button>
       </div>
 
-      <div className="text-2xl text-purple-800  'font-semibold'">
+      <div className="text-sm md:text-2xl text-purple-800  'font-semibold'">
         FLORES Y MÁS
       </div>
     </div>

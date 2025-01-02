@@ -39,7 +39,7 @@ export default function CarouselComponent({ imagesList = [] }: CarouselProps) {
                   <Image
                     src={data}
                     alt=""
-                    className="object-cover w-full h-full"
+                    className="object-cover max-md:w-fit w-full h-full"
                   />
                 </div>
               </CarouselItem>
