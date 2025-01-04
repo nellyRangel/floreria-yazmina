@@ -68,17 +68,17 @@ export default function Page() {
           <Image
             src="/img/bouquet2.svg"
             alt="Ramo floral"
-            className="w-full object-cover h-[400px] md:h-[600px]"
+            className="w-full"
             width={1200}
             height={600}
-            priority
+            layout="responsive"
           />
 
-          <div className="absolute top-8 left-10 md:left-16 lg:left-20 text-left">
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
+          <div className="absolute bottom-10 right-10 md:right-16 md:bottom-16 lg:right-20 lg:bottom-20 z-10 flex flex-col items-end w-full max-w-md px-4 md:px-0">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
               Acerca de Nosotros
             </h2>
-            <p className="text-md md:text-lg lg:text-xl text-white mt-4 max-w-md">
+            <p className="text-md md:text-lg lg:text-xl text-white text-end py-4 md:py-8">
               Nos apasiona el arte floral, y eso se refleja en cada uno de
               nuestros arreglos. Ya sea para una boda, un cumpleaños o un
               aniversario, nuestras flores no solo embellecen, sino que
