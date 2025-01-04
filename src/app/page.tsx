@@ -77,7 +77,7 @@ export default function Home() {
           <Image
             src="/img/bouquet.svg"
             alt="Ramo floral"
-            className="w-full object-cover h-[400px] md:h-[600px]"
+            className="w-full object-cover "
             width={1200}
             height={600}
             priority
