@@ -45,6 +45,7 @@ export default function Servicios() {
       {/* Sección de Presentación */}
       <section className="relative">
         <div className="relative w-full flex flex-col justify-center items-start bg-moradoTop">
+          {/* Imagen de fondo */}
           <Image
             src="/img/image-bg-6.svg"
             alt="Ramo floral"
@@ -54,8 +55,19 @@ export default function Servicios() {
             layout="responsive"
           />
 
+          {/* SVG decorativo */}
+          <div className="absolute bottom-0 left-0 z-10">
+            <Image
+              src="/img/vector3.svg"
+              alt="Figura abstracta"
+              className="w-[500px] h-auto opacity-100 md:w-[700px] lg:w-[900px]"
+              width={900}
+              height={900}
+            />
+          </div>
+
           {/* Contenido de la sección Servicios */}
-          <div className="absolute bottom-10 left-10 md:left-16 md:bottom-16 lg:left-20 lg:bottom-20 z-10 flex flex-col items-start w-full max-w-md px-4 md:px-0">
+          <div className="absolute bottom-10 left-10 md:left-16 md:bottom-16 lg:left-20 lg:bottom-20 z-20 flex flex-col items-start w-full max-w-md px-4 md:px-0">
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
               Servicios
             </h2>

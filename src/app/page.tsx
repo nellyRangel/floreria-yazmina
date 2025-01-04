@@ -73,19 +73,30 @@ export default function Home() {
     <div className="w-full h-full">
       {/* Sección de Presentación */}
       <section className="relative bg-gray-50">
-        <div className="relative w-full flex flex-col justify-center items-center bg-moradoTop">
+        <div className="w-full flex flex-col justify-center items-center bg-moradoTop">
+          {/* Imagen de fondo */}
           <Image
             src="/img/bouquet.svg"
             alt="Ramo floral"
-            className="w-full object-cover h-[400px] md:h-[600px] "
+            className="w-full object-cover"
             width={1200}
             height={600}
             layout="responsive"
           />
 
-          {/*priority */}
+          {/* SVG decorativo */}
+          <div className="absolute top-0 left-0 z-10">
+            <Image
+              src="/img/vector1.svg"
+              alt="Figura abstracta"
+              className="w-[500px] h-auto opacity-100 md:w-[700px] lg:w-[900px]"
+              width={900}
+              height={900}
+            />
+          </div>
 
-          <div className="absolute top-8 left-10 md:left-16 lg:left-20 text-left">
+          {/* Texto principal */}
+          <div className="absolute top-8 left-10 md:left-16 lg:left-20 z-20 text-left">
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
               Bienvenido
             </h2>
@@ -99,61 +110,46 @@ export default function Home() {
           </div>
 
           {/* Recuadro de contacto */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-xl p-6 w-[90%] max-w-md">
-            <h3 className="text-xl font-bold text-purple-700 mb-4 text-center">
+          <div className="absolute left-20 bg-white shadow-lg rounded-xl p-6 w-[90%] max-w-sm md:max-w-md z-20">
+            <h3 className="text-2xl font-PlayfairDisplay text-purple-700 mb-4 text-center">
               Contáctanos
             </h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <svg
-                  className="w-5 h-5 text-purple-700 mr-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 7.89c.32.32.86.1.86-.35V3.36c0-.45-.54-.67-.86-.35L3 8z"
+            <div className="space-y-4">
+              <div className="flex items-center space-x-4 bg-moradoLight rounded-full">
+                <div className="flex items-center justify-center w-10 h-10">
+                  <Image
+                    src="/img/phone.svg"
+                    alt="Teléfono"
+                    className="w-5 h-5"
+                    width={20}
+                    height={20}
                   />
-                </svg>
-                <span>(+52) 123-456-7890</span>
+                </div>
+                <span className="text-white">(+52) 123-456-7890</span>
               </div>
-              <div className="flex items-center">
-                <svg
-                  className="w-5 h-5 text-purple-700 mr-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16.36 3.64a9 9 0 11-12.72 0 1.5 1.5 0 012.12 0 6 6 0 108.48 0 1.5 1.5 0 012.12 0z"
+              <div className="flex items-center space-x-4 bg-moradoLight rounded-full">
+                <div className="flex items-center justify-center w-10 h-10">
+                  <Image
+                    src="/img/envelope.svg"
+                    alt="Correo"
+                    className="w-5 h-5"
+                    width={20}
+                    height={20}
                   />
-                </svg>
-                <span>contacto@floreriaejemplo.com</span>
+                </div>
+                <span className="text-white">contacto@floreriaejemplo.com</span>
               </div>
-              <div className="flex items-center">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14.76 9.54c.59-.59 1.57-.59 2.16 0l3.09 3.09c.59.59.59 1.57 0 2.16l-5.94 5.94a12 12 0 01-8.49-8.49l5.94-5.94c.59-.59 1.57-.59 2.16 0l3.09 3.09c.59.59.59 1.57 0 2.16l-2.12 2.12z"
+              <div className="flex items-center space-x-4 bg-moradoLight rounded-full">
+                <div className="flex items-center justify-center w-10 h-10">
+                  <Image
+                    src="/img/send.svg"
+                    alt="WhatsApp"
+                    className="w-5 h-5"
+                    width={20}
+                    height={20}
                   />
-                </svg>
-                <span>(+52) 123-456-7890</span>
+                </div>
+                <span className="text-white">(+52) 123-456-7890</span>
               </div>
             </div>
           </div>
