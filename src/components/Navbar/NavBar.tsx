@@ -10,14 +10,14 @@ export default function NavBar() {
     route.push(path);
   }
   return (
-    <div className="w-full sticky top-0 z-20 flex justify-between bg-grisNavBar p-8 items-center">
+    <div className="w-full sticky top-0 z-20 flex justify-between bg-grisNavBar p-4 items-center">
       <div>
         <Image
           src="/img/logo.svg"
           alt="Ramo floral"
           className="w-full"
-          width={300}
-          height={200}
+          width={200}
+          height={150}
           layout="responsive"
         />
       </div>

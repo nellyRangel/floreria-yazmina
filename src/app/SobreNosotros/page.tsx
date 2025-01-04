@@ -74,11 +74,11 @@ export default function Page() {
             priority
           />
 
-          <div className=" flex flex-col items-end justify-center w-2/5 pr-10 pb-20">
-            <h2 className="text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
+          <div className="absolute top-8 left-10 md:left-16 lg:left-20 text-left">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
               Acerca de Nosotros
             </h2>
-            <p className="text-xl text-white text-end ">
+            <p className="text-md md:text-lg lg:text-xl text-white mt-4 max-w-md">
               Nos apasiona el arte floral, y eso se refleja en cada uno de
               nuestros arreglos. Ya sea para una boda, un cumpleaños o un
               aniversario, nuestras flores no solo embellecen, sino que
