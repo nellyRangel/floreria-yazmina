@@ -73,12 +73,24 @@ export default function Page() {
             height={600}
             layout="responsive"
           />
-
-          <div className="absolute bottom-10 right-6 md:right-10 md:bottom-16 lg:right-12 lg:bottom-20 z-10 flex flex-col items-end w-full max-w-none px-4 md:px-0">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-purple-700 font-PlayfairDisplay whitespace-nowrap">
+          {/*
+          <div className="absolute bottom-10 right-10 md:right-16 md:bottom-16 lg:right-20 lg:bottom-20 z-10 flex flex-col items-end w-full max-w-md px-4 md:px-0">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
               Acerca de Nosotros
             </h2>
-            <p className="text-sm md:text-md lg:text-lg text-white text-end py-2 md:py-4">
+            <p className="text-md md:text-lg lg:text-xl text-white text-end py-4 md:py-8">
+              Nos apasiona el arte floral, y eso se refleja en cada uno de
+              nuestros arreglos. Ya sea para una boda, un cumpleaños o un
+              aniversario, nuestras flores no solo embellecen, sino que
+              comunican lo que las palabras a veces no pueden.
+            </p>
+          </div>*/}
+
+          <div className="absolute bottom-10 right-6 md:right-16 md:bottom-16 lg:right-20 lg:bottom-20 z-10 flex flex-col items-end w-full max-w-md px-4 md:px-0">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay whitespace-nowrap">
+              Acerca de Nosotros
+            </h2>
+            <p className="text-md md:text-lg lg:text-xl text-white text-end py-4 md:py-8">
               Nos apasiona el arte floral, y eso se refleja en cada uno de
               nuestros arreglos. Ya sea para una boda, un cumpleaños o
               simplemente para alegrar tu día, nuestras flores no solo
