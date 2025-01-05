@@ -78,7 +78,7 @@ export default function Page() {
           {/* SVG decorativo */}
           <div className="absolute bottom-0 right-0 z-10">
             <Image
-              src="/img/vector2.svg"
+              src="/img/Vector2.svg"
               alt="Figura abstracta"
               className="w-[500px] h-auto opacity-100 md:w-[700px] lg:w-[900px]"
               width={900}

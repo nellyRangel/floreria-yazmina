@@ -58,7 +58,7 @@ export default function Servicios() {
           {/* SVG decorativo */}
           <div className="absolute bottom-0 left-0 z-10">
             <Image
-              src="/img/vector3.svg"
+              src="/img/Vector3.svg"
               alt="Figura abstracta"
               className="w-[500px] h-auto opacity-100 md:w-[700px] lg:w-[900px]"
               width={900}

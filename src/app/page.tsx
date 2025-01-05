@@ -87,7 +87,7 @@ export default function Home() {
           {/* SVG decorativo */}
           <div className="absolute top-0 left-0 z-10">
             <Image
-              src="/img/vector1.svg"
+              src="/img/Vector1.svg"
               alt="Figura abstracta"
               className="w-[500px] h-auto opacity-100 md:w-[700px] lg:w-[900px]"
               width={900}

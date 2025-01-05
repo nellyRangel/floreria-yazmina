@@ -12,7 +12,7 @@ export default function CardRazones({ info }: CardRazonesProps) {
           {info.indice}
         </p>
       </div>
-      <div className="rounded-3xl shadow-xl shadow-shadowBlue/30 px-7 py-4 h-full border border-solid border-gray-400/50 gap-y-6 flex flex-col w-full bg-white">
+      <div className="rounded-3xl shadow-xl shadow-purple-900/30 px-7 py-4 h-full border border-solid border-gray-400/50 gap-y-6 flex flex-col w-full bg-white">
         <p className="text-title-purple text-2xl select-none font-extrabold">
           {info.titulo}
         </p>
