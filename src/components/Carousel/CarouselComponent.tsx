@@ -29,7 +29,7 @@ export default function CarouselComponent({ imagesList = [] }: CarouselProps) {
   }, [api]);
 
   return (
-    <div className="w-[1200px] h-[600px] flex flex-col items-center justify-center">
+    <div className="w-full sm:w-[800px] md:w-[1000px] lg:w-[1200px] xl:w-[1400px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex flex-col items-center justify-center">
       <div className="relative w-full h-full flex flex-col items-center justify-center gap-y-2">
         <Carousel className="w-full h-full" setApi={setApi}>
           <CarouselContent className="h-full">
@@ -39,7 +39,7 @@ export default function CarouselComponent({ imagesList = [] }: CarouselProps) {
                   <Image
                     src={data}
                     alt=""
-                    className="object-cover max-md:w-fit w-full h-full"
+                    className="object-cover max-w-full max-h-full w-full h-full"
                   />
                 </div>
               </CarouselItem>
