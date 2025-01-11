@@ -73,7 +73,7 @@ export default function Home() {
     <div className="w-full h-full">
       {/* Sección de Presentación */}
       <section className="relative bg-gray-50">
-        <div className="w-full flex flex-col justify-center items-center bg-moradoTop">
+        <div className="flex flex-col w-full justify-center items-center bg-moradoTop">
           {/* Imagen de fondo */}
           <Image
             src="/img/bouquet.svg"
@@ -84,8 +84,8 @@ export default function Home() {
             layout="responsive"
           />
 
-          {/* SVG decorativo */}
-          <div className="absolute top-0 left-0 z-10">
+          {/* SVG decorativo (visible solo en pantallas medianas y grandes) */}
+          <div className="absolute top-0 left-0 z-10 hidden md:block">
             <Image
               src="/img/Vector1.svg"
               alt="Figura abstracta"
@@ -95,8 +95,8 @@ export default function Home() {
             />
           </div>
 
-          {/* Texto principal */}
-          <div className="absolute top-8 left-10 md:left-16 lg:left-20 z-20 text-left">
+          {/* Texto principal (visible solo en pantallas medianas y grandes) */}
+          <div className="absolute top-8 left-10 md:left-16 lg:left-20 z-20 hidden md:block text-left">
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
               Bienvenido
             </h2>
@@ -109,8 +109,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Recuadro de contacto */}
-          <div className="absolute left-20 bg-white shadow-lg rounded-xl p-6 w-[90%] max-w-sm md:max-w-md z-20">
+          {/* Recuadro de contacto (visible solo en pantallas medianas y grandes) */}
+          <div className="absolute left-20 bg-white shadow-lg rounded-xl p-6 w-[90%] max-w-sm md:max-w-md z-20 hidden md:block">
             <h3 className="text-2xl font-PlayfairDisplay text-purple-700 mb-4 text-center">
               Contáctanos
             </h3>
@@ -152,6 +152,19 @@ export default function Home() {
                 <span className="text-white">(+52) 123-456-7890</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Contenido alternativo para pantallas pequeñas */}
+        <div className="block md:hidden p-6">
+          <h2 className="text-xl font-bold text-purple-700">Bienvenido</h2>
+          <p className="text-sm text-slate-500 mt-2">
+            Transformamos momentos en recuerdos inolvidables con la belleza y
+            frescura de nuestras flores. Ya sea para celebrar, sorprender o
+            simplemente decorar tu espacio, tenemos la flor perfecta para ti.
+          </p>
+          <div className="mt-4 text-sm text-purple-700">
+            <p>Contáctanos: contacto@floreriaejemplo.com</p>
           </div>
         </div>
       </section>

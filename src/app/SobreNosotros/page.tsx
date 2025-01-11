@@ -76,7 +76,7 @@ export default function Page() {
           />
 
           {/* SVG decorativo */}
-          <div className="absolute bottom-0 right-0 z-10">
+          <div className="absolute bottom-0 right-0 z-10 hidden md:block">
             <Image
               src="/img/Vector2.svg"
               alt="Figura abstracta"
@@ -86,8 +86,8 @@ export default function Page() {
             />
           </div>
 
-          {/* Texto principal */}
-          <div className="absolute bottom-6 right-4 sm:bottom-8 sm:right-2 md:right-4 md:bottom-16 lg:right-8 lg:bottom-20 z-20 flex flex-col items-end w-full max-w-md px-4 sm:px-6 md:px-0">
+          {/* Texto principal (visible solo en pantallas medianas y grandes) */}
+          <div className="absolute bottom-6 right-4 sm:bottom-8 sm:right-2 md:right-4 md:bottom-16 lg:right-8 lg:bottom-20 z-20 hidden md:flex flex-col items-end w-full max-w-md px-4 sm:px-6 md:px-0">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-purple-700 font-PlayfairDisplay whitespace-nowrap">
               Acerca de Nosotros
             </h2>
@@ -99,6 +99,19 @@ export default function Page() {
               pueden.
             </p>
           </div>
+        </div>
+
+        {/* Contenido alternativo para pantallas pequeñas */}
+        <div className="block md:hidden p-6">
+          <h2 className="text-xl font-bold text-purple-700">
+            Acerca de Nosotros
+          </h2>
+          <p className="text-sm text-slate-500 mt-2">
+            Nos apasiona el arte floral, y eso se refleja en cada uno de
+            nuestros arreglos. Ya sea para una boda, un cumpleaños o simplemente
+            para alegrar tu día, nuestras flores no solo embellecen, sino que
+            comunican lo que las palabras a veces no pueden.
+          </p>
         </div>
       </section>
 

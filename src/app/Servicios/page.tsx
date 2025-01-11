@@ -55,8 +55,8 @@ export default function Servicios() {
             layout="responsive"
           />
 
-          {/* SVG decorativo */}
-          <div className="absolute bottom-0 left-0 z-10">
+          {/* SVG decorativo (visible solo en pantallas medianas y grandes) */}
+          <div className="absolute bottom-0 left-0 z-10 hidden md:block">
             <Image
               src="/img/Vector3.svg"
               alt="Figura abstracta"
@@ -66,8 +66,8 @@ export default function Servicios() {
             />
           </div>
 
-          {/* Contenido de la sección Servicios */}
-          <div className="absolute bottom-10 left-10 md:left-16 md:bottom-16 lg:left-20 lg:bottom-20 z-20 flex flex-col items-start w-full max-w-md px-4 md:px-0">
+          {/* Contenido de la sección Servicios (visible solo en pantallas medianas y grandes) */}
+          <div className="absolute bottom-10 left-10 md:left-16 md:bottom-16 lg:left-20 lg:bottom-20 z-20 hidden md:flex flex-col items-start w-full max-w-md px-4 md:px-0">
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-purple-700 font-PlayfairDisplay">
               Servicios
             </h2>
@@ -79,6 +79,17 @@ export default function Servicios() {
               pueden.
             </p>
           </div>
+        </div>
+
+        {/* Contenido alternativo para pantallas pequeñas */}
+        <div className="block md:hidden p-6">
+          <h2 className="text-xl font-bold text-purple-700">Servicios</h2>
+          <p className="text-sm text-slate-500 mt-2">
+            Nos apasiona el arte floral, y eso se refleja en cada uno de
+            nuestros arreglos. Ya sea para una boda, un cumpleaños o simplemente
+            para alegrar tu día, nuestras flores no solo embellecen, sino que
+            comunican lo que las palabras a veces no pueden.
+          </p>
         </div>
       </section>
 
