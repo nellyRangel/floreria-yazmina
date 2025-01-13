@@ -110,7 +110,7 @@ export default function Home() {
           </div>
 
           {/* Recuadro de contacto (visible solo en pantallas medianas y grandes) */}
-          <div className="absolute left-20 bg-white shadow-lg rounded-xl p-6 w-[90%] max-w-sm md:max-w-md z-20 hidden md:block">
+          <div className="absolute left-20 bg-white shadow-lg rounded-xl p-6 w-[90%] max-w-sm md:max-w-md z-20 hidden md:block max-xl:bottom-10">
             <h3 className="text-2xl font-PlayfairDisplay text-purple-700 mb-4 text-center">
               Contáctanos
             </h3>
