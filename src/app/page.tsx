@@ -1,5 +1,4 @@
 'use client';
-import CardRazones from '@/components/CardsRazones/CardRazones';
 import CarouselComponent from '@/components/Carousel/CarouselComponent';
 import { RazonesProps } from '@/interfaces/types';
 import Image from 'next/image';
@@ -63,9 +62,34 @@ export default function Home() {
     },
     {
       indice: 4,
+      titulo: 'Variedad de Ocasiones y Estilos',
+      descripcion:
+        'Desde bodas hasta aniversarios o simplemente para alegrar tu día, ofrecemos diseños florales adaptados a cualquier evento y estilo.',
+    },
+    /*
+    {
+      indice: 4,
       titulo: 'Compromiso con la Sostenibilidad',
       descripcion:
         'Estamos comprometidos con el medio ambiente, por lo que nos esforzamos por utilizar prácticas ecológicas en todos nuestros procesos, desde el empaquetado hasta la entrega.',
+    },*/
+  ];
+
+  const valores: RazonesProps[] = [
+    {
+      titulo: 'Pasión por el detalle',
+      descripcion:
+        'Cada flor es elegida cuidadosamente y cada diseño es creado con amor y dedicación.',
+    },
+    {
+      titulo: 'Innovación constante',
+      descripcion:
+        'Siempre estamos buscando nuevas formas de sorprender a nuestros clientes con diseños frescos y modernos.',
+    },
+    {
+      titulo: 'Compromiso con la calidad',
+      descripcion:
+        'No hacemos concesiones en la calidad de nuestras flores ni en el servicio que ofrecemos.',
     },
   ];
 
@@ -208,12 +232,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sección "¿Por qué elegirnos?" */}
+      {/*
+      {/* Sección "¿Por qué elegirnos?" 
       <section className="py-16" style={{ backgroundColor: '#C8BCF6' }}>
         <div className="container mx-auto w-full flex flex-col justify-center items-center">
           <div className="w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
             {masdatos.map((razon, idx) => (
               <CardRazones key={idx} info={razon} />
+            ))}
+          </div>
+        </div>
+      </section>/*}
+
+      {/* Sección "Nuestros Valores" */}
+      <section className="bg-fondoLila py-16 relative h-full">
+        {/* <Image
+          src={FloresIcono}
+          alt=""
+          className="absolute right-0 -top-5 h-[400px]"
+        ></Image> */}
+        <div className="container mx-auto px-6 max-md:px-5">
+          <h3 className="text-center text-5xl max-md:text-3xl font-semibold text-white mb-8 font-PlayfairDisplay">
+            Nuestros valores
+          </h3>
+          <div className="flex flex-col gap-y-5 w-full">
+            {valores.map((valor, idx) => (
+              <div
+                key={idx}
+                className={`text-purple-800 flex flex-col gap-y-3 ${idx % 2 == 0 ? 'items-start' : 'items-end'}`}
+              >
+                <h4 className={`font-bold font-PlayfairDisplay text-4xl`}>
+                  {valor.titulo}
+                </h4>
+                <p
+                  className={`text-2xl text-white w-3/5 ${idx % 2 == 0 ? 'text-start' : 'text-end'}`}
+                >
+                  {valor.descripcion}
+                </p>
+              </div>
             ))}
           </div>
         </div>
