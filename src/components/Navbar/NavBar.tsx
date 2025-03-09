@@ -117,6 +117,8 @@ export default function NavBar() {
                 >
                   Inicio
                 </button>
+
+                {/*
                 <button
                   className={`text-sm md:text-2xl text-purple-800 hover:font-semibold select-none ${
                     pathname.includes('SobreNosotros') && 'font-semibold'
@@ -125,6 +127,8 @@ export default function NavBar() {
                 >
                   Acerca de Nosotros
                 </button>
+                */}
+
                 <button
                   className={`text-sm md:text-2xl text-purple-800 hover:font-semibold select-none ${
                     pathname.includes('Servicios') && 'font-semibold'

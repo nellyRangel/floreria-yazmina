@@ -5,7 +5,65 @@ import Image from 'next/image';
 import img1 from '/public/img/bouquet2.svg';
 import imgMeeting from '/public/img/image-bg-6.svg';
 
+//IMAGENES DE SERVICIOS
+
+//BODAS
+import bodas1 from '/public/img/bodas/boda1.jpg';
+//import bodas10 from '/public/img/bodas/boda10.jpg';
+//import bodas11 from '/public/img/bodas/boda11.jpg';
+import bodas12 from '/public/img/bodas/boda12.jpg';
+import bodas2 from '/public/img/bodas/boda2.jpg';
+//import bodas3 from '/public/img/bodas/boda3.jpg';
+//import bodas4 from '/public/img/bodas/boda4.jpg';
+//import bodas5 from '/public/img/bodas/boda5.jpg';
+//import bodas6 from '/public/img/bodas/boda6.jpg';
+//import bodas7 from '/public/img/bodas/boda7.jpg';
+//import bodas8 from '/public/img/bodas/boda8.jpg';
+//import bodas9 from '/public/img/bodas/boda9.jpg';
+
+//IGLESIA
+//import iglesia1 from '/public/img/iglesia/iglesia1.jpg';
+//import iglesia10 from '/public/img/iglesia/iglesia10.jpg';
+//import iglesia2 from '/public/img/iglesia/iglesia2.jpg';
+//import iglesia3 from '/public/img/iglesia/iglesia3.jpg';
+//import iglesia4 from '/public/img/iglesia/iglesia4.jpg';
+//import iglesia5 from '/public/img/iglesia/iglesia5.jpg';
+//import iglesia6 from '/public/img/iglesia/iglesia6.jpg';
+import iglesia7 from '/public/img/iglesia/iglesia7.jpg';
+//import iglesia8 from '/public/img/iglesia/iglesia8.jpg';
+import iglesia9 from '/public/img/iglesia/iglesia9.jpg';
+
+//RAMOS
+//import ramos1 from '/public/img/ramos/ramo1.jpg';
+//import ramos2 from '/public/img/ramos/ramo2.jpg';
+import ramos3 from '/public/img/ramos/ramo3.jpg';
+//import ramos4 from '/public/img/ramos/ramo4.jpg';
+import ramos5 from '/public/img/ramos/ramo5.jpg';
+//import ramos6 from '/public/img/ramos/ramo6.jpg';
+
+//VARIOS
+//import varios1 from '/public/img/varios/varios1.jpg';
+//import varios2 from '/public/img/varios/varios2.jpg';
+//import varios3 from '/public/img/varios/varios3.jpg';
+//import varios4 from '/public/img/varios/varios4.jpg';
+//import varios5 from '/public/img/varios/varios5.jpg';
+import varios6 from '/public/img/varios/varios6.jpg';
+//import varios7 from '/public/img/varios/varios7.jpg';
+//import varios8 from '/public/img/varios/varios8.jpg';
+//import varios9 from '/public/img/varios/varios9.jpg';
+
 const imagesListTest = [imgMeeting, img1];
+
+const imageListServicios = [
+  bodas12,
+  bodas1,
+  iglesia9,
+  iglesia7,
+  ramos5,
+  ramos3,
+  bodas2,
+  varios6,
+];
 
 export default function Home() {
   const sobreNosotros: RazonesProps[] = [
@@ -24,11 +82,11 @@ export default function Home() {
       descripcion:
         'Nos aseguramos de que tus flores lleguen en perfectas condiciones, justo a tiempo.',
     },
-    {
+    /*{
       titulo: 'Sostenibilidad:',
       descripcion:
         'Estamos comprometidos con el medio ambiente, utilizando empaques y prácticas ecológicas.',
-    },
+    }, */
     {
       titulo: 'Atención al cliente cercana y amigable:',
       descripcion:
@@ -89,7 +147,7 @@ export default function Home() {
     {
       titulo: 'Compromiso con la calidad',
       descripcion:
-        'No hacemos concesiones en la calidad de nuestras flores ni en el servicio que ofrecemos.',
+        'Nos aseguramos de ofrecer siempre flores frescas y un servicio excepcional, sin comprometer la calidad en ningún detalle.',
     },
   ];
 
@@ -139,6 +197,7 @@ export default function Home() {
               Contáctanos
             </h3>
             <div className="space-y-4">
+              {/* CONTACTOS ORIGINALES
               <div className="flex items-center space-x-4 bg-moradoLight rounded-full">
                 <div className="flex items-center justify-center w-10 h-10">
                   <Image
@@ -151,6 +210,7 @@ export default function Home() {
                 </div>
                 <span className="text-white">(+52) 123-456-7890</span>
               </div>
+              
               <div className="flex items-center space-x-4 bg-moradoLight rounded-full">
                 <div className="flex items-center justify-center w-10 h-10">
                   <Image
@@ -163,17 +223,19 @@ export default function Home() {
                 </div>
                 <span className="text-white">contacto@floreriaejemplo.com</span>
               </div>
-              <div className="flex items-center space-x-4 bg-moradoLight rounded-full">
+              */}
+
+              <div className="flex items-center bg-moradoLight rounded-full">
                 <div className="flex items-center justify-center w-10 h-10">
                   <Image
                     src="/img/send.svg"
                     alt="WhatsApp"
-                    className="w-5 h-5"
+                    className="w-6 h-6"
                     width={20}
                     height={20}
                   />
                 </div>
-                <span className="text-white">(+52) 123-456-7890</span>
+                <span className="text-white">(+52) 811-256-9780</span>
               </div>
             </div>
           </div>
@@ -188,12 +250,68 @@ export default function Home() {
             simplemente decorar tu espacio, tenemos la flor perfecta para ti.
           </p>
           <div className="mt-4 text-sm text-purple-700">
-            <p>Contáctanos: contacto@floreriaejemplo.com</p>
+            <p>Contáctanos</p>
+            <div className="flex items-center">
+              <div className="flex items-center justify-center w-10 h-10">
+                <Image
+                  src="/img/send.svg"
+                  alt="WhatsApp"
+                  className="w-6 h-6"
+                  width={20}
+                  height={20}
+                />
+              </div>
+              <span className="text-purple-700">(+52) 811-256-9780</span>
+            </div>
+            {/*<p>Contáctanos: (+52) 123-456-7890</p>*/}
           </div>
         </div>
       </section>
 
       {/* Sección Acerca de Nosotros */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-6 text-center">
+          <h3 className="text-5xl font-semibold text-purple-700 mb-12 font-PlayfairDisplay">
+            Acerca de Nosotros
+          </h3>
+          {/* First Row */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {sobreNosotros.slice(0, 3).map((item, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="rounded-full bg-purple-100 w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-purple-700 font-bold text-lg">
+                    {idx + 1}
+                  </span>
+                </div>
+                <h4 className="text-lg font-semibold text-purple-700 mb-2">
+                  {item.titulo}
+                </h4>
+                <p className="text-gray-600 text-sm">{item.descripcion}</p>
+              </div>
+            ))}
+          </div>
+          {/* Second Row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            {' '}
+            {/* Added mt-8 here */}
+            {sobreNosotros.slice(3).map((item, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="rounded-full bg-purple-100 w-12 h-12 flex items-center justify-center mb-4">
+                  <span className="text-purple-700 font-bold text-lg">
+                    {idx + 4}
+                  </span>
+                </div>
+                <h4 className="text-lg font-semibold text-purple-700 mb-2">
+                  {item.titulo}
+                </h4>
+                <p className="text-gray-600 text-sm">{item.descripcion}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* EL ORIGINAL Sección Acerca de Nosotros 
       <section className="bg-white py-16">
         <div className="container mx-auto px-6 text-center">
           <h3 className="text-5xl font-semibold text-purple-700 mb-12 font-PlayfairDisplay">
@@ -216,6 +334,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Sección Servicios */}
       <section className="bg-gray-50 py-16">
@@ -226,7 +345,7 @@ export default function Home() {
 
           <div className="w-full flex flex-col">
             <div className="relative w-full flex flex-col items-center justify-center gap-y-2">
-              <CarouselComponent imagesList={imagesListTest} />
+              <CarouselComponent imagesList={imageListServicios} />
             </div>
           </div>
         </div>

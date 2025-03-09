@@ -4,6 +4,51 @@ import Image from 'next/image';
 import img1 from '/public/img/bouquet2.svg';
 import imgMeeting from '/public/img/image-bg-6.svg';
 
+//BODAS
+import bodas1 from '/public/img/bodas/boda1.jpg';
+import bodas10 from '/public/img/bodas/boda10.jpg';
+import bodas11 from '/public/img/bodas/boda11.jpg';
+import bodas12 from '/public/img/bodas/boda12.jpg';
+import bodas2 from '/public/img/bodas/boda2.jpg';
+import bodas3 from '/public/img/bodas/boda3.jpg';
+import bodas4 from '/public/img/bodas/boda4.jpg';
+import bodas5 from '/public/img/bodas/boda5.jpg';
+//import bodas6 from '/public/img/bodas/boda6.jpg';
+import bodas7 from '/public/img/bodas/boda7.jpg';
+import bodas8 from '/public/img/bodas/boda8.jpg';
+import bodas9 from '/public/img/bodas/boda9.jpg';
+
+//IGLESIA
+import iglesia1 from '/public/img/iglesia/iglesia1.jpg';
+import iglesia10 from '/public/img/iglesia/iglesia10.jpg';
+import iglesia2 from '/public/img/iglesia/iglesia2.jpg';
+import iglesia3 from '/public/img/iglesia/iglesia3.jpg';
+import iglesia4 from '/public/img/iglesia/iglesia4.jpg';
+import iglesia5 from '/public/img/iglesia/iglesia5.jpg';
+import iglesia6 from '/public/img/iglesia/iglesia6.jpg';
+import iglesia7 from '/public/img/iglesia/iglesia7.jpg';
+import iglesia8 from '/public/img/iglesia/iglesia8.jpg';
+import iglesia9 from '/public/img/iglesia/iglesia9.jpg';
+
+//RAMOS
+import ramos1 from '/public/img/ramos/ramo1.jpg';
+import ramos2 from '/public/img/ramos/ramo2.jpg';
+import ramos3 from '/public/img/ramos/ramo3.jpg';
+import ramos4 from '/public/img/ramos/ramo4.jpg';
+import ramos5 from '/public/img/ramos/ramo5.jpg';
+import ramos6 from '/public/img/ramos/ramo6.jpg';
+
+//VARIOS
+import varios1 from '/public/img/varios/varios1.jpg';
+import varios2 from '/public/img/varios/varios2.jpg';
+import varios3 from '/public/img/varios/varios3.jpg';
+import varios4 from '/public/img/varios/varios4.jpg';
+import varios5 from '/public/img/varios/varios5.jpg';
+import varios6 from '/public/img/varios/varios6.jpg';
+import varios7 from '/public/img/varios/varios7.jpg';
+import varios8 from '/public/img/varios/varios8.jpg';
+import varios9 from '/public/img/varios/varios9.jpg';
+
 interface ServicioProps {
   titulo: string;
   descripcion: string;
@@ -38,6 +83,47 @@ const servicios: ServicioProps[] = [
 ];
 
 export default function Servicios() {
+  const imageListBodas = [
+    bodas1,
+    bodas2,
+    bodas3,
+    bodas4,
+    bodas5,
+    bodas7,
+    bodas8,
+    bodas9,
+    bodas10,
+    bodas11,
+    bodas12,
+  ];
+
+  const imageListIglesia = [
+    iglesia1,
+    iglesia2,
+    iglesia3,
+    iglesia4,
+    iglesia5,
+    iglesia6,
+    iglesia7,
+    iglesia8,
+    iglesia9,
+    iglesia10,
+  ];
+
+  const imageListRamos = [ramos1, ramos2, ramos3, ramos4, ramos5, ramos6];
+
+  const imageListVarios = [
+    varios1,
+    varios2,
+    varios3,
+    varios4,
+    varios5,
+    varios6,
+    varios7,
+    varios8,
+    varios9,
+  ];
+
   const imagesListTest = [imgMeeting, img1];
 
   return (
@@ -102,7 +188,7 @@ export default function Servicios() {
 
           <div className="w-full flex flex-col">
             <div className="relative w-full flex flex-col items-center justify-center gap-y-2">
-              <CarouselComponent imagesList={imagesListTest} />
+              <CarouselComponent imagesList={imageListBodas} />
             </div>
           </div>
 
@@ -119,12 +205,12 @@ export default function Servicios() {
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-6">
           <h3 className="text-5xl font-semibold text-purple-700 text-center mb-12 font-PlayfairDisplay">
-            Bautizos
+            Iglesias
           </h3>
 
           <div className="w-full flex flex-col">
             <div className="relative w-full flex flex-col items-center justify-center gap-y-2">
-              <CarouselComponent imagesList={imagesListTest} />
+              <CarouselComponent imagesList={imageListIglesia} />
             </div>
           </div>
 
@@ -141,19 +227,20 @@ export default function Servicios() {
       <section className="bg-fondoLila py-16">
         <div className="container mx-auto px-6">
           <h3 className="text-5xl font-semibold text-white text-center mb-12 font-PlayfairDisplay">
-            Aniversarios
+            Ramos
           </h3>
 
           <div className="w-full flex flex-col">
             <div className="relative w-full flex flex-col items-center justify-center gap-y-2">
-              <CarouselComponent imagesList={imagesListTest} />
+              <CarouselComponent imagesList={imageListRamos} />
             </div>
           </div>
 
           <div className="w-full flex flex-col items-center mt-8">
             <p className="text-[25px] text-white text-center max-w-4xl leading-[1.5]">
-              Celebra el amor con flores únicas. Diseñamos arreglos
-              personalizados que cuentan tu historia de amor.
+              Expresa tus sentimientos con ramos florales únicos. Diseñamos cada
+              arreglo con dedicación para transmitir belleza y emoción en cada
+              detalle.
             </p>
           </div>
         </div>
@@ -163,12 +250,12 @@ export default function Servicios() {
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-6">
           <h3 className="text-5xl font-semibold text-purple-700 text-center mb-12 font-PlayfairDisplay">
-            Eventos Sociales
+            Varios
           </h3>
 
           <div className="w-full flex flex-col">
             <div className="relative w-full flex flex-col items-center justify-center gap-y-2">
-              <CarouselComponent imagesList={imagesListTest} />
+              <CarouselComponent imagesList={imageListVarios} />
             </div>
           </div>
 
