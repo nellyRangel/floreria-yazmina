@@ -39,7 +39,7 @@ export default function CarouselComponent({ imagesList = [] }: CarouselProps) {
                   <Image
                     src={data}
                     alt=""
-                    className="object-contain w-full h-[600px] max-md:h-[400px] max-sm:h-[200px] max-lg:h-[400px] max-xl:h-[500px"
+                    className="object-contain w-full h-[600px] max-md:h-[400px] max-sm:h-[200px] max-lg:h-[400px] max-xl:h-[500px]"
                   />
                 </div>
               </CarouselItem>
